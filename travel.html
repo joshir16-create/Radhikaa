@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust - Travel Blog</title>
+    <style>
+        /*Basic Reset*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /*Navbar Styling*/
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1,6;
+        }
+        .navbar{
+            background-color: rgb(12, 12, 77);
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbarh1{
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbarul{
+            list-style: none;
+            display: flex;
+        }
+        .navbarul li{
+            margin-left: 20px;
+        }
+        .navbarul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        /*Carousel Container*/
+        .carousel-container{
+            width: 100%;
+            max-width: 700px;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 10px;
+            border: 3px solid black;
+        }
+        /*Image Slider*/
+        .carousel{
+            display: flex;
+            animation: slide 12s infinite;
+            width: 300%;/*3Images in the slider*/
+        }
+        .carousel img{
+            width: 100%;
+        }
+    /*CSS Animation for the carousel*/
+    @keyframes slide{
+        0% {transform: translateX(0%);}
+        33% {transform: translateX(-100%);}
+        66% {transform: translateX(-200%);}
+        100% {transform: translateX(0%);}
+    }
+    /*Content Section*/
+    .content{
+        max-width: 700px;
+        margin: 40px auto;
+        padding: 0 20px;
+
+    }
+    .content.h2{
+        font-size: 24px;
+        color: rgb(33, 33, 99);
+        margin-bottom: 10px;
+    }
+
+    .content p{
+        font-size: 18px;
+        color:rgb(37, 37, 80);
+        line-height: 1.8;
+    }
+     </style>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <h1>Wanderlust</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Travel Tips</a></li>
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+     </nav>
+     <!--Carousel-->
+     <div class="carousel-container">
+        <div class="carousel">
+            <img src="https://drakensberghikes.com/templates/yootheme/cache/98/20180708_082635-01-98084080.webp" alt="Mountain Adventure">
+            <img src="https://www.usnews.com/object/image/0000018c-4a17-d046-afdd-4b7f517b0001/main-photo-stock.jpg?update-time=1702050334779&size=responsive970" alt="Beach Paradise">
+            <img src="https://images.tripadeal.com.au/cdn-cgi/image/format=auto,width=800/https://cstad.s3.ap-southeast-2.amazonaws.com/5506_Rome_City_Escape_WEB_HERO_1_SpanishSteps.jpg" alt="City Escape">
+         </div>
+     </div>
+     <!--Content Section-->
+     <div class="content">
+        <h2>Welcome to Wanderlust</h2>
+        <p>
+            Join us on a journey across the world as we explore hidden gems, famous landmarks, and breathtaking
+            landscapes. Whether you are a beach lover, mountain enthusiast, or a city explorer, there's 
+            something here for everyone.
+            Discover travel tips, find inspiration, and get ready for your next adventure with us!
+        </p>
+
+
+
+     </div>
+    
+</body>
+</html>
